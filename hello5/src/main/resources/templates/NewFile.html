@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.6.0/bootstrap-tagsinput.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.6.0/bootstrap-tagsinput.css" />
+<style>
+	body{
+		margin-top: 100px;
+	}
+</style>
+</head>
+<body>
+	<div id="my-tag-list" class="tag-list"></div>
+	<script>
+		$(function() {
+			// If using Bootstrap 2, be sure to include:
+			// Tags.bootstrapVersion = "2";
+			$('#my-tag-list').tags({
+				tagData:["boilerplate", "tags"],
+				suggestions:["basic", "suggestions"],
+				excludeList:["not", "these", "words"]
+			});
+		});
+	</script>
+
+</body>
+</html>
